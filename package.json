@@ -2,7 +2,7 @@
   "name": "express-raco-ai",
   "version": "1.0.0",
   "description": "Backend API for an e-commerce ordering and payment system with Stripe and bKash integrations.",
-  "main": "dist/server.js",
+  "main": "dist/src/server.js",
   "type": "commonjs",
   "private": true,
   "engines": {
@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/src/server.js",
     "test": "jest --runInBand",
     "test:watch": "jest --watch",
     "lint": "biome check .",
