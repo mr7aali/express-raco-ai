@@ -33,7 +33,7 @@ export class ProductController {
   }
 
   async findAll(req: Request, res: Response) {
-    const result = await productService.findAll(req.query as never);
+    const result = await productService.findAll(req.validated?.query as never);
 
     res.status(200).json({
       success: true,

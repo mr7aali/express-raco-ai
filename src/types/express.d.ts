@@ -7,6 +7,11 @@ declare global {
         id: string;
         role: UserRole;
       };
+      validated?: {
+        body?: unknown;
+        params?: Request["params"];
+        query?: Request["query"];
+      };
     }
   }
 }

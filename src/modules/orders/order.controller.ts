@@ -23,7 +23,7 @@ export class OrderController {
       throw new ApiError(401, "Authentication token is required");
     }
 
-    const result = await orderService.findMine(req.user.id, req.query as never);
+    const result = await orderService.findMine(req.user.id, req.validated?.query as never);
 
     res.status(200).json({
       success: true,
