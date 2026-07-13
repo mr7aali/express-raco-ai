@@ -92,3 +92,9 @@ https://your-ngrok-url.ngrok-free.app/api/payments/bkash/callback
 ```
 
 Update `.env` with the public callback URL before testing bKash callbacks.
+
+For full environment and ngrok setup details, see:
+
+```txt
+docs/environment-ngrok-guide.md
+```
