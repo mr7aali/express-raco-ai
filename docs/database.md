@@ -25,6 +25,9 @@ Start PostgreSQL and Redis:
 docker compose up -d
 ```
 
+The Docker PostgreSQL container is exposed on host port `5433` to avoid conflicts with any
+PostgreSQL server already installed on Windows.
+
 Create the database tables:
 
 ```bash

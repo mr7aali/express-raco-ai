@@ -15,9 +15,9 @@ export function validateRequest(schema: ZodType) {
       query: req.query,
     }) as ParsedRequest;
 
+    req.validated = parsed;
     req.body = parsed.body ?? req.body;
     req.params = parsed.params ?? req.params;
-    req.query = parsed.query ?? req.query;
 
     next();
   };
